@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <title>Online Food Blog</title>
+
+    <style>
+        .navbar {
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .btn {
+            width: 20%
+        }
+        
+        #error {
+            text-align: center;
+            color: red;
+        }
+        
+        form {
+            margin: 1%;
+        }
+    </style>
+    <script>
+        alert(errors);
+    </script>
+</head>
+
+<body>
+    <%if(errors != null){ for(var i=0; i< errors.length; i++){%>
+        <p id="error">
+            <%=errors[i].msg%>
+        </p>
+        <%}}%>
+
+            <!--Navigation Bar-->
+            <div class="col-lg-12">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+                            <a class="navbar-brand" href="/">Online Food Blog</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                
+                                <li>
+                                    <a href='/food-experience'>Food Experience</a>
+                                </li>
+
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href='/signup'><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+                                <li><a href="/login"><span class="glyphicon glyphicon-arrow-left"></span> Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--Modal For about project.-->
+            <div class="modal fade" id="modal-aboutProject">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <center>
+                                <h4 class="modal-title">About Us</h4>
+                            </center>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <p>
+                                Here you will get many restaurants along with their wide range of food items in one plce. We will fulfill your hunger however you like!
+                            </p>
+
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Image carousel-->
+                        <div class="container">
+                            <center>
+                                <h2 style="color:rgb(48, 121, 72)">Welcome to Online Food Blog</h2>
+                            </center>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    
+                                    
+                                    
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <img src="images/img1.jpg" alt="FoodBlog" style="width:100%;height: 480px;">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+
+                                    
+
+                                   
+
+                                </div>
+
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
